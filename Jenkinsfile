@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/Kaloyanyrd/flask-docker-app.git'
+                git 'https://github.com/Kaloyanyrd/flask-docker-app.git', credentialsID: 'bc988f7c-f9c5-446f-ab39-b7107025ad2b'
             }
         }
 
